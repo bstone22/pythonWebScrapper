@@ -8,9 +8,9 @@
     <script type="text/javascript">
       function test(){
           var userInput = document.getElementById("userInput").value;
-          document.getElementById("demo").innerHTML = userInput;
+          //document.getElementById("demo").innerHTML = userInput;
           //window.alert(userInput);
-
+          window.location.href = 'response.html' + userInput;
       }
       </script>
   <form>
@@ -21,15 +21,6 @@
 
     <!-- add this line for function to write into -->
   <p id="demo"></p>
-
-
-  <form action="/action_page.php">
-  First name:<br>
-  <input type="text" name="firstname" value="Mickey"><br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse"><br><br>
-  <input type="submit" value="Submit">
-</form>
 
 
   <ul>
