@@ -4,7 +4,34 @@
   <h1>Fantasy Football SITE!!!</h1>
   <p>Welcome to LocalLibrary, a website developed by <em>Mozilla Developer Network</em>!</p>
   <h2>Dynamic content</h2>
-  <p>The library has the following record counts:</p>
+  <p id="demo"</p>
+    <script type="text/javascript">
+      function test(){
+          var userInput = document.getElementById("userInput").value;
+          document.getElementById("demo").innerHTML = userInput;
+          //window.alert(userInput);
+
+      }
+      </script>
+  <form>
+    Enter Name:<br>
+    <input type="text" id="userInput"></input> <br>
+    <button onclick="test()">Submit</button>
+  </form>
+
+    <!-- add this line for function to write into -->
+  <p id="demo"></p>
+
+
+  <form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
   <ul>
   </ul>
 {% endblock %}
